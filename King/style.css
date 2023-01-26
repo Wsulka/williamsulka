@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&family=Texturina:wght@500&display=swap');
+
+
+
+* {
+   box-sizing: border-box;
+   font-family: 'Source Sans Pro', sans-serif;
+   margin: 0;
+}
+
+/* Basics */
+body {
+   background-color: #000a17;
+}
+
+nav {
+   background-color: hotpink;
+   width: 100vw;
+   height: 70px;
+   display: flex;
+   justify-content: center;
+}
+
+li {
+   display: inline-block;
+   margin-right: 20px;
+}
+
+footer {
+   background-color: hotpink;
+   width: 100vw;
+   height: 70px;
+}
+
+/* Containers */
+
+#popup {
+   display: none;
+   flex-direction: column;
+   position: absolute;
+   width: 100vw;
+   height: 100vh;
+   justify-content: center;
+   align-items: center;
+   background-color: yellow;
+}
+
+#gametext {
+   max-width: 350px;
+   padding: 15px;
+}
+
+#buttons {
+   display: flex;
+   flex-direction: row;
+}
+
+#maincontainer {
+   display: flex;
+   flex-flow: column;
+   width: 100vw;
+   height: 100vh;
+   justify-content: space-between;
+   align-items: center;
+}
+
+#gamecontainer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   max-width: 512px;
+   padding: 0px 20px;
+   background: #000a17;
+}
+
+/* text */
+ 
+h1 {
+   font-family: 'Texturina', serif;
+   font-weight: 500px;
+   color: #eb7999;
+   margin-bottom: 20px;
+}
+
+p {
+   color: #eb7999;
+}
+
+#picture {
+   width: 100vw;
+   min-width: 300px;
+   max-width: 512px;
+   background: red;
+}
+
+button {
+   border: 1px solid #eb7999;
+   background-color: #eb7999;
+   color: #000a17;
+   border-radius: 10px;
+   padding: 5px 10px;
+   margin: 5px;
+}
+
+@media only screen and (max-width: 375px) {
+   #buttons {
+
+      flex-flow: column;
+      width: 180px;
+
+
+   }
+
+   nav {
+      height: 35px;
+   }
+
+   footer {
+      height: 35px;
+   }
+
+}
+
