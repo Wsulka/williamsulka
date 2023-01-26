@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+:root {
+    --main-color: #DB0000;
+    --highlight-color: #c06963;
+    font-size: 17.3px;
+  }
+
+* { margin:0; padding:0; box-sizing:border-box; }  
+
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 1rem;
+    color: var(--main-color);
+    
+}
+
+#menucontainer {
+    display: none;
+    background: white;
+    border: 1px solid var(--main-color);
+    padding: 0px;
+    width: 100vw;
+}
+
+#menubtn {
+ 
+    border-right: 1px solid var(--main-color);
+    background: white;
+    width: 70px;
+    color: var(--main-color);
+    padding: 3px 10px 3px 15px;
+    
+}
+
+#footer-side {
+    border: 1px solid white;
+    width: 20vw;
+    padding: 30px;
+    
+}
+
+#footer-info {
+    width: 70%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+
+footer {
+    display: flex;
+    background: var(--main-color);
+    color: white;
+    padding: 30px;
+    min-height: 600px;
+    padding-left: 250px;
+    
+}
+
+
+.navcontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+    
+
+
+}
+
+.navcontainer:nth-child(1) {
+    border-bottom: 1px solid var(--main-color);
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+main {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+}
+
+ul {
+    display: flex;
+    color: var(--main-color);
+    list-style: none;
+    margin: 0px;
+    padding: 10px 0px;
+} 
+
+ul:nth-child(1) {
+
+}
+
+li {
+    margin-right: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+    
+}
+
+li:hover {
+    color: var(--highlight-color)
+}
+
+
+/* Container stuff */
+.container {
+    display: flex;
+}
+
+
+#footerlogocontainer {
+    justify-content: flex-end;
+/* Surely there's a better way to do this, feels like a shameful hack */
+}
+
+#main-content, #main-info {
+    margin-top: 80px;
+    justify-content: space-around;
+    
+    height: 100%;
+    min-height: 600px;
+    border-bottom: 1px solid var(--main-color);
+    padding-bottom: 20px;
+
+}
+
+#info-text:hover {
+    color: var(--highlight-color);
+    cursor: pointer;    
+}
+
+#info-image:hover {
+    opacity: 0.7;
+    cursor: pointer;   
+
+}
+
+.imgcontainer {
+    min-width: 200px;
+    max-width: 600px;
+    height: auto;
+    object-fit: cover;
+}
+
+#main-text, #info-text {
+    width: 30vw;
+    margin: 0px;
+    padding: 0px;
+}
+
+#maincontainer {
+    padding-top: 70px;
+    width: 100vw;    
+    margin-left: -10px;
+}
+
+
+#sidecontainer {
+    display: flex;
+    flex-direction: column;
+    width: 260px; 
+
+    align-items: center;
+}
+
+
+#products {
+    margin: 50px 0px 150px 250px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.productcontainer {
+    width: 25%;
+    min-width: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;   
+    margin: 20px;
+}
+
+.productimage {
+    width: 100%; 
+    height: 500px;
+}
+
+
+
+/* Image stuff */
+
+#main-image, #info-image {
+    width: 100%;
+    height: 100%;
+}
+
+#footerlogo {
+    width: 270px;
+}
+
+#sitelogo {
+    width: 160px;
+    padding-bottom: 50px;
+}
+
+
+
+/* Type stuff */
+
+#sidecontainer p {
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    }
+
+h1 {
+    font-size: 30px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h2 {
+    font-size: 24px;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+span {
+    font-style: italic;
+    font-weight: 600;
+}
+
+p {
+    line-height: 1.7;
+    font-size: 17px;
+}
+
+#title, #author {
+    text-align: center;
+}
+
+#info-text {
+    width: 30vw;
+}
+
+#menucontainer {
+    display: none; 
+}
+
+
+
+
+@media only screen and (max-width: 1023px) {
+
+    
+    #main-content, #main-info {
+        margin-top: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #info-image {
+        margin-top: 50px;
+    }
+
+    #maincontainer {
+        padding-top: 0px;
+        margin-left: -10px;
+        justify-content: center;
+    }
+
+    #main-text, #info-text {
+        width: 80vw;
+        margin: 40px 0px;
+        padding: 30px 0px;
+
+    }
+
+    #sidecontainer {
+        display: none;
+    }
+
+    main {
+        width: 90vw;
+        padding-top: 0px;
+        
+    }
+
+    footer {
+        flex-direction: column;
+        width: 100vw;
+        padding: 0px 20px;
+    }
+
+
+
+    #footer-side {
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid white;
+    }
+
+    #footerlogocontainer {
+        justify-content: center
+    /* Surely there's a better way to do this, feels like a shameful hack */
+    }
+
+
+    #footer-side {
+        width: 90%;
+    }
+
+    #footer-info {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    .product {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+    
+        
+    }
+
+    #products {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        margin: 0px;
+        
+    }
+    #main-content, #main-info {
+        margin: 0px;
+        padding: 30px 20px;
+        
+    }
+
+    #main-text, #info-text {
+        margin: 0px;
+    }
+
+
+    nav {
+        position: fixed;
+        left: -311px;
+        width: 300px;
+        border-right: 1px solid var(--main-color);
+        border-bottom: 1px solid var(--main-color);
+        background: white;
+        transition: left 0.1s ease-in-out;
+        padding-left: 10px;
+        
+    }
+
+    .navcontainer {
+        flex-direction: column;   
+    }
+
+    .navcontainer:nth-child(1) {
+        border-bottom: none;
+    }
+
+    ul {
+        flex-direction: column;
+        border-bottom: 1px solid var(--main-color);
+    }
+
+    #menu {
+        position: fixed;
+        display: block;
+    }
+
+    #menucontainer {
+        position: fixed;
+        display: block;
+        left: -1px;
+        
+    }
+
+    li {
+        padding: 10px 5px;
+        font-weight: 700;
+        font-size: 15px;
+    }
+
+    header {
+        position: fixed;
+    }
+
+
+}
+
+  
